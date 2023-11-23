@@ -1,0 +1,8 @@
+{
+  "appService.zipIgnorePattern": [
+    "node_modules{,/**}",
+    ".vscode{,/**}"
+  ],
+  "appService.defaultWebAppToDeploy": "/subscriptions/1f7085f4-47cd-47b4-935f-fa496c89c25f/resourceGroups/rg-api/providers/Microsoft.Web/sites/mlmaven",
+  "appService.deploySubpath": "."
+}
