@@ -5,8 +5,6 @@ import cors from 'cors'
 import dotenv from 'dotenv'
 dotenv.config()
 const mongoConnection = mongoConnect();
-// to use   let db = req.mongoConnection;
-
 
 // Configura o middleware do Express para receber JSON nas requisições
 app.use(express.json());
@@ -46,6 +44,9 @@ app.use('/api/sports', sportsRoutes);
 // Rotas para atividades
 import activitiesRoutes from './routes/activities.js';
 app.use('/api/activities', activitiesRoutes);
+
+import rankingRoutes from './routes/ranking.js';
+app.use('/api/ranking', rankingRoutes);
 
 // Inicia o servidor
 const PORT = process.env.PORT || 3333;
